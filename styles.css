@@ -1,8 +1,11 @@
 /* --- VARIABLES Y RESET GENERAL --- */
 :root {
-    --color-primary-orange: #FF5722; /* Naranja vibrante del logo */
-    --color-dark-bg: #0a0b14; /* Fondo casi negro, azulado profundo */
-    --color-card-bg: #121420; /* Un poco más claro para las tarjetas */
+    --color-primary-orange: #FF5722;
+    /* Naranja vibrante del logo */
+    --color-dark-bg: #0a0b14;
+    /* Fondo casi negro, azulado profundo */
+    --color-card-bg: #121420;
+    /* Un poco más claro para las tarjetas */
     --color-text-light: #ffffff;
     --color-text-muted: #a0a0a0;
     --font-main: 'Poppins', sans-serif;
@@ -15,7 +18,8 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces */
+    scroll-behavior: smooth;
+    /* Desplazamiento suave al hacer clic en enlaces */
 }
 
 body {
@@ -26,7 +30,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 700;
     line-height: 1.2;
 }
@@ -89,6 +95,7 @@ ul {
     color: white;
     border: 2px solid var(--color-primary-orange);
 }
+
 .btn-dark:hover {
     background-color: var(--color-primary-orange);
 }
@@ -103,15 +110,17 @@ ul {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: transparent; /* Transparente al inicio */
+    background: transparent;
+    /* Transparente al inicio */
     transition: all 0.4s ease;
 }
 
 .navbar.scrolled {
-    background-color: rgba(10, 11, 20, 0.95); /* Oscuro al hacer scroll */
+    background-color: rgba(10, 11, 20, 0.95);
+    /* Oscuro al hacer scroll */
     padding: 1rem 5%;
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .logo-container {
@@ -142,7 +151,8 @@ ul {
     opacity: 0.8;
 }
 
-.nav-links a:hover, .nav-links a.active {
+.nav-links a:hover,
+.nav-links a.active {
     opacity: 1;
     color: var(--color-primary-orange);
 }
@@ -153,6 +163,7 @@ ul {
     border-radius: 20px;
     opacity: 1 !important;
 }
+
 .btn-nav:hover {
     color: white !important;
     box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4);
@@ -171,7 +182,7 @@ ul {
     display: flex;
     align-items: center;
     /* Fondo temporal degradado. REEMPLAZAR con imagen real de paneles solares */
-    background: linear-gradient(135deg, #1a1a2e 0%, #3a1c14 100%); 
+    background: linear-gradient(135deg, #1a1a2e 0%, #3a1c14 100%);
     /* EJEMPLO PARA IMAGEN REAL: background: url('solar-bg.jpg') no-repeat center center/cover; */
 }
 
@@ -181,7 +192,7 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(10,11,20,0.9) 30%, rgba(10,11,20,0.4) 100%);
+    background: linear-gradient(to right, rgba(10, 11, 20, 0.9) 30%, rgba(10, 11, 20, 0.4) 100%);
 }
 
 .hero-content {
@@ -203,7 +214,7 @@ ul {
     font-size: 1.2rem;
     margin-bottom: 40px;
     max-width: 600px;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero-buttons .btn {
@@ -233,7 +244,8 @@ ul {
 /* --- SERVICES SECTION (INTERACTIVA) --- */
 .services-section {
     padding: 80px 0 120px;
-    background-color: #0f111a; /* Ligeramente diferente para contraste */
+    background-color: #0f111a;
+    /* Ligeramente diferente para contraste */
 }
 
 .section-title {
@@ -245,6 +257,7 @@ ul {
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
+
 .section-title p {
     color: var(--color-text-muted);
 }
@@ -263,14 +276,14 @@ ul {
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Interacción al pasar el mouse */
 .service-card:hover {
     transform: translateY(-15px);
     border-top: 3px solid var(--color-primary-orange);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
 .icon-box {
@@ -315,7 +328,8 @@ ul {
 }
 
 .service-card:hover .card-link i {
-    margin-left: 15px; /* Flecha se mueve al hacer hover */
+    margin-left: 15px;
+    /* Flecha se mueve al hacer hover */
 }
 
 /* --- CTA BANNER --- */
@@ -356,7 +370,8 @@ ul {
     font-size: 0.95rem;
 }
 
-.footer-links h4, .footer-contact h4 {
+.footer-links h4,
+.footer-contact h4 {
     color: var(--color-text-light);
     margin-bottom: 25px;
     font-size: 1.2rem;
@@ -391,7 +406,7 @@ ul {
 .footer-bottom {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 0.9rem;
 }
 
@@ -400,15 +415,16 @@ ul {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .nav-links {
-        display: none; /* Menú móvil simplificado por ahora */
+        display: none;
+        /* Menú móvil simplificado por ahora */
     }
-    
+
     .hamburger {
         display: block;
     }
-    
+
     .services-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
@@ -423,7 +439,10 @@ ul {
 }
 
 .nav-logo {
-    height: 150px; /* Altura fija para que no se deforme la barra */
-    width: auto;  /* El ancho se ajusta solo */
-    margin-right: 10px; /* Un poco de espacio si dejas texto al lado */
+    height: 150px;
+    /* Altura fija para que no se deforme la barra */
+    width: auto;
+    /* El ancho se ajusta solo */
+    margin-right: 10px;
+    /* Un poco de espacio si dejas texto al lado */
 }
