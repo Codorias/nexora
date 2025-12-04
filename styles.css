@@ -415,3 +415,15 @@ ul {
         margin: 0 auto;
     }
 }
+
+/* Estilos para el logo en la navegación */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 150px; /* Altura fija para que no se deforme la barra */
+    width: auto;  /* El ancho se ajusta solo */
+    margin-right: 10px; /* Un poco de espacio si dejas texto al lado */
+}
