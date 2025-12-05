@@ -465,3 +465,14 @@ ul {
     margin-right: 10px;
     /* Un poco de espacio si dejas texto al lado */
 }
+
+/* --- CORRECCIÓN PARA CELULARES --- */
+@media (max-width: 768px) {
+    .hero-section {
+        /* En celular, desactivamos el efecto 'fixed' para que la imagen cargue sí o sí */
+        background-attachment: scroll !important;
+        
+        /* Opcional: Centramos la imagen para que se vea la parte más importante en vertical */
+        background-position: center center !important; 
+    }
+}
