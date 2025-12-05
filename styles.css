@@ -374,9 +374,14 @@ ul {
     margin-bottom: 60px;
 }
 
+/* Estilos para el logo en el pie de página */
+.footer-logo-container {
+    margin-bottom: 20px; /* Un poco de espacio debajo del logo */
+}
+
 .footer-logo {
-    height: 35px;
-    margin-right: 10px;
+    height: 120px; /* Un poco más pequeño que el de la barra de navegación */
+    width: auto;  /* Se ajusta automáticamente */
 }
 
 .footer-about p {
