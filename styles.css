@@ -175,15 +175,29 @@ ul {
     cursor: pointer;
 }
 
-/* --- HERO SECTION (PORTADA) --- */
+/* --- HERO SECTION (PORTADA) CON IMAGEN DE FONDO --- */
 .hero-section {
-    height: 100vh;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
     position: relative;
     display: flex;
     align-items: center;
-    /* Fondo temporal degradado. REEMPLAZAR con imagen real de paneles solares */
-    background: linear-gradient(135deg, #1a1a2e 0%, #3a1c14 100%);
-    /* EJEMPLO PARA IMAGEN REAL: background: url('solar-bg.jpg') no-repeat center center/cover; */
+
+    /* AQUÍ ESTÁ LA MAGIA: Degradado + Imagen */
+    /* El degradado se define PRIMERO para que quede encima de la imagen.
+       Va de casi negro (izquierda) a semitransparente (derecha) */
+    background-image: linear-gradient(to right, rgba(10, 11, 20, 0.98) 20%, rgba(10, 11, 20, 0.3) 100%),
+                      url('paneles.jpeg'); /* <-- ¡ASEGÚRATE QUE ESTE NOMBRE SEA CORRECTO! */
+
+    /* Propiedades para que la imagen se adapte perfectamente */
+    background-size: cover;      /* Escala la imagen para cubrir todo el espacio sin deformarse */
+    background-position: left; /* Centra la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* (Opcional) Efecto "parallax" elegante al hacer scroll */
+}
+/* IMPORTANTE: Como ahora el degradado está en el fondo,
+   ya no necesitamos el div antiguo del overlay. Lo ocultamos. */
+.hero-overlay {
+    display: none;
 }
 
 .hero-overlay {
