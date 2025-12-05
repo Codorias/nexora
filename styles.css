@@ -186,7 +186,7 @@ ul {
     /* El degradado se define PRIMERO para que quede encima de la imagen.
        Va de casi negro (izquierda) a semitransparente (derecha) */
     background-image: linear-gradient(to right, rgba(10, 11, 20, 0.98) 20%, rgba(10, 11, 20, 0.3) 100%),
-                      url('paneles.jpeg'); /* <-- ¡ASEGÚRATE QUE ESTE NOMBRE SEA CORRECTO! */
+                      url('./paneles.jpeg'); /* <-- ¡ASEGÚRATE QUE ESTE NOMBRE SEA CORRECTO! */
 
     /* Propiedades para que la imagen se adapte perfectamente */
     background-size: cover;      /* Escala la imagen para cubrir todo el espacio sin deformarse */
